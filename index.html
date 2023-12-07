@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora1.0</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="bg">
+        <input class="visor" id="display" disabled>
+        
+            
+        <div class="numeros">
+            <div class="linhas">
+                <div class="linha">
+                    <button type="button" value="CE" class="botao" id="vermelho" id="CE" onclick="limpar()">CE</button>
+                    <button type="button" value="/" class="botao" id="vermelho" id="barra" onclick="setOperator('/')">/</button>
+                    <button type="button" value="x" class="botao" id="vermelho" id="x" onclick="setOperator('x')"> x </button>
+                </div>
+                <div class="linha">
+                    <button type="button" value="7" class="botao" id="cinza" id="sete" onclick="clickou('7')"> 7 </button>
+                    <button type="button" value="8" class="botao" id="cinza" id="oito" onclick="clickou('8')"> 8 </button>
+                    <button type="button" value="9" class="botao" id="cinza" id="nove" onclick="clickou('9')"> 9 </button>
+                </div>
+                <div class="linha">
+                    <button type="button" value="4" class="botao" id="cinza" id="quatro" onclick="clickou('4')"> 4 </button>
+                    <button type="button" value="5" class="botao" id="cinza" id="cinco" onclick="clickou('5')"> 5 </button>
+                    <button type="button" value="6" class="botao" id="cinza" id="seis" onclick="clickou('6')"> 6 </button>
+                </div>
+                <div class="linha">
+                    <button type="button" value="1" class="botao" id="cinza" id="um" onclick="clickou('1')">1</button>
+                    <button type="button" value="2" class="botao" id="cinza" id="dois" onclick="clickou('2')">2</button>
+                    <button type="button" value="3" class="botao" id="cinza" id="tres" onclick="clickou('3')">3</button>
+                    
+                </div>
+                <div class="linha">
+                    <button type="button" value="0" class="zero"  id="cinza" id="zero" onclick="clickou('0')">0</button>
+                    <button type="button" value="," class="botao" id="cinza" id="virugla" onclick="">,</button>
+                </div>
+                
+            </div>
+            
+            <div class="operacao">
+                <button type="button" value="-" class="menos" id="vermelho" onclick="setOperator('-')">-</button>
+                <button type="button" value="+" class="mais" id="vermelho" onclick="setOperator('+')">+</button>
+                <button type="submit"  class="igual" id="vermelho" value="iguall" onclick="result()"> = </button>
+
+            </div>
+        </div>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>

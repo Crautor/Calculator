@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #adadad;
+}
+
+.bg{
+    display: flex;
+    flex-direction: column;
+    background-color: #34495e;
+    height: 200px;
+    width: 500px;
+    border: 1.5px solid black;
+    border-radius: 15px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    padding: 10px;
+}
+
+.numeros{
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;    
+}
+.linhas{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 0;
+    
+}
+button{
+    width: 33.3%;
+    height: 20px;
+    border: 0;
+    border-radius: 3px;
+    margin: 1px;
+}
+.zero{
+    width: 66.6%;   
+    border: 0; 
+    border-radius: 3px;
+    margin: 1px;
+
+}
+.mais{
+    width: 100%;
+    height: 41.3px;
+    border: 0;
+    border-radius: 3px;
+    margin: 1px;
+
+}
+.menos{
+    width: 100%;
+    height: 21.3px;
+    border: 0;
+    border-radius: 3px;
+    margin: 1px;
+
+}
+.igual{
+    width: 100%;
+    height: 41.3px;
+    border: 0;
+    border-radius: 3px;
+    margin: 1px;
+
+}
+#vermelho{
+    background-color: #df7567;
+}
+#vermelho:hover{
+    background-color: #dc5644;
+}
+#cinza{
+    background-color: #a0abb9;
+}
+#cinza:hover{
+    background-color: #737c87;
+
+}
+.linha{
+    display: flex;
+    width: 100%;
+}
+
+.operacao{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    border: 0;
+}
+
+.visor{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: white;
+    height: 40px;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    padding: 1px;
+}
